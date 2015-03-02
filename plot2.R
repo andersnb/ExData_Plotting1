@@ -29,4 +29,4 @@ df <- df[(df$Date == "2007-02-01" | df$Date == "2007-02-02"), ]
 png("plot2.png")
 plot(df$DateTime, df$Global_active_power, type="n", xlab="", ylab="Global Active Power (kilowatts)")
 lines(df$DateTime, df$Global_active_power)
-
+dev.off()
