@@ -28,4 +28,4 @@ df <- df[(df$Date == "2007-02-01" | df$Date == "2007-02-02"), ]
 #
 png("plot1.png")
 hist(df$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red")
-
+dev.off()
